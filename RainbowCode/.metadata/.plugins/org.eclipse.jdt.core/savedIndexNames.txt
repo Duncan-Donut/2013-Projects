@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+C:\Users\Duncan\Desktop\Computer Stuff\J Code\RainbowCode\.metadata\.plugins\org.eclipse.jdt.core
