@@ -1,0 +1,55 @@
+import java.util.ArrayList;
+
+
+
+public class Rainbowz {
+	
+	public static void main(String[] args) {
+		
+		int begin =0;
+		int total = 16777216;
+		String text = "hi yall";
+		ArrayList <String> charzart = new ArrayList<String>();
+		ArrayList <Integer> hexa = new ArrayList<Integer>();
+		
+		
+		
+		//charzart
+		int b = text.length();
+		
+		for(int i=1;i<=b;i++){
+			charzart.add(text.substring(i-1,i));
+		}
+		
+		for(int z=0;z<charzart.size();z++){
+			System.out.println(charzart.get(z));
+		}
+		
+		//hexa
+				
+		int a = text.length()-1;
+		
+		for(int z=0;z<charzart.size();z++){
+			
+			if(charzart.get(z).toString().matches(" ")){
+				a--;
+				System.out.println("Does this run");
+			}
+		}
+				
+		
+		int numb = total/a;
+				
+		for(int x=0;x<=16777216;x=x+numb){
+					hexa.add(x);
+		}
+				
+		for(int y=0;y<hexa.size();y++){
+					System.out.println(hexa.get(y));
+		}
+		
+
+	}
+	
+
+}

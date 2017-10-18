@@ -1,0 +1,13 @@
+
+public class Rainbowz {
+	
+	public static void main(String[] args) {
+	
+		int total = 16,777,216;
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,215 @@
+import java.util.ArrayList;
+
+
+
+public class Rainbowz {
+	
+	public static void main(String[] args) {
+		
+		int begin =0;
+		int total = 16777216;
+		String text = "hello it's me";
+		ArrayList <String> charzart = new ArrayList<String>();
+		ArrayList <Integer> hexa = new ArrayList<Integer>();
+		ArrayList <String> color = new ArrayList<String>();
+ 		
+		
+		//charzart array
+		int b = text.length();
+		
+		for(int i=1;i<=b;i++){
+			charzart.add(text.substring(i-1,i));
+		}
+		
+		for(int z=0;z<charzart.size();z++){
+			System.out.println(charzart.get(z));
+		}
+		
+		//hexa array
+				
+		int a = text.length()-1;
+		
+		for(int z=0;z<charzart.size();z++){
+			
+			if(charzart.get(z).toString().matches(" ")){
+				a--;
+			}
+		}
+				
+		
+		int numb = total/a;
+				
+		for(int x=0;x<=16777216;x=x+numb){
+					hexa.add(x);
+		}
+		
+		//color
+		
+		for(int y=0;y<hexa.size();y++){
+			
+			int cvalue = hexa.get(y);
+			int one,two,three,four,five,six;
+			
+			one = cvalue / 1048570;
+			cvalue = cvalue - one*1048570;
+			
+			two = cvalue / 65356;
+			cvalue = cvalue - two*65356;
+			
+			three = cvalue / 4096;
+			cvalue = cvalue - three*4096;
+			
+			four = cvalue/256;
+			cvalue = cvalue - four*256;
+			
+			five = cvalue /16;
+			cvalue = cvalue - five*16;
+			
+			six = cvalue;
+			
+			String let;
+			
+			switch(one){
+			case 0 : let = "0"; break;
+			case 1 : let = "1"; break;
+			case 2 : let = "2"; break;
+			case 3 : let = "3"; break;
+			case 4 : let = "4"; break;
+			case 5 : let = "5"; break;
+			case 6 : let = "6"; break;
+			case 7 : let = "7"; break;
+			case 8 : let = "8"; break;
+			case 9 : let = "9"; break;
+			case 10: let = "A"; break;
+			case 11: let = "B"; break;
+			case 12: let = "C"; break;
+			case 13: let = "D"; break;
+			case 14: let = "E"; break;
+			case 15: let = "F"; break;
+			default: let = "x";
+			
+			color.add(let);
+			let = "";
+			
+			switch(two){
+			case 0 : let = "0"; break;
+			case 1 : let = "1"; break;
+			case 2 : let = "2"; break;
+			case 3 : let = "3"; break;
+			case 4 : let = "4"; break;
+			case 5 : let = "5"; break;
+			case 6 : let = "6"; break;
+			case 7 : let = "7"; break;
+			case 8 : let = "8"; break;
+			case 9 : let = "9"; break;
+			case 10: let = "A"; break;
+			case 11: let = "B"; break;
+			case 12: let = "C"; break;
+			case 13: let = "D"; break;
+			case 14: let = "E"; break;
+			case 15: let = "F"; break;
+			default: let = "x";
+			
+			color.add(let);
+			let = "";
+			
+			switch(three){
+			case 0 : let = "0"; break;
+			case 1 : let = "1"; break;
+			case 2 : let = "2"; break;
+			case 3 : let = "3"; break;
+			case 4 : let = "4"; break;
+			case 5 : let = "5"; break;
+			case 6 : let = "6"; break;
+			case 7 : let = "7"; break;
+			case 8 : let = "8"; break;
+			case 9 : let = "9"; break;
+			case 10: let = "A"; break;
+			case 11: let = "B"; break;
+			case 12: let = "C"; break;
+			case 13: let = "D"; break;
+			case 14: let = "E"; break;
+			case 15: let = "F"; break;
+			default: let = "x";
+			
+			color.add(let);
+			let = "";
+			
+			switch(four){
+			case 0 : let = "0"; break;
+			case 1 : let = "1"; break;
+			case 2 : let = "2"; break;
+			case 3 : let = "3"; break;
+			case 4 : let = "4"; break;
+			case 5 : let = "5"; break;
+			case 6 : let = "6"; break;
+			case 7 : let = "7"; break;
+			case 8 : let = "8"; break;
+			case 9 : let = "9"; break;
+			case 10: let = "A"; break;
+			case 11: let = "B"; break;
+			case 12: let = "C"; break;
+			case 13: let = "D"; break;
+			case 14: let = "E"; break;
+			case 15: let = "F"; break;
+			default: let = "x";
+			
+			color.add(let);
+			let = "";
+			
+			switch(five){
+			case 0 : let = "0"; break;
+			case 1 : let = "1"; break;
+			case 2 : let = "2"; break;
+			case 3 : let = "3"; break;
+			case 4 : let = "4"; break;
+			case 5 : let = "5"; break;
+			case 6 : let = "6"; break;
+			case 7 : let = "7"; break;
+			case 8 : let = "8"; break;
+			case 9 : let = "9"; break;
+			case 10: let = "A"; break;
+			case 11: let = "B"; break;
+			case 12: let = "C"; break;
+			case 13: let = "D"; break;
+			case 14: let = "E"; break;
+			case 15: let = "F"; break;
+			default: let = "x";
+			
+			color.add(let);
+			let = "";
+			
+			switch(six){
+			case 0 : let = "0"; break;
+			case 1 : let = "1"; break;
+			case 2 : let = "2"; break;
+			case 3 : let = "3"; break;
+			case 4 : let = "4"; break;
+			case 5 : let = "5"; break;
+			case 6 : let = "6"; break;
+			case 7 : let = "7"; break;
+			case 8 : let = "8"; break;
+			case 9 : let = "9"; break;
+			case 10: let = "A"; break;
+			case 11: let = "B"; break;
+			case 12: let = "C"; break;
+			case 13: let = "D"; break;
+			case 14: let = "E"; break;
+			case 15: let = "F"; break;
+			default: let = "x";
+			
+			color.add(let);
+			let = "";
+			
+			}
+			
+			
+			
+			
+		}
+		 
+
+	}
+	
+
+}
